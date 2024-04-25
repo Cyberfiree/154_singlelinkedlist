@@ -22,6 +22,16 @@ void addNode() {
     cin >> nama;
     nodeBaru->noMhs = nim; // Mengisi data NIM pada node baru
     nodeBaru->name = nama; // Mengisi data nama pada node baru
+
+    // Jika linked list masih kosong atau NIM baru kurang dari atau sama dengan NIM pada node pertama
+    if (START == NULL || nim <= START->noMhs) {
+        // Jika linked list tidak kosong dan NIM baru sama dengan NIM pada node pertama
+        if (START != NULL && nim == START->noMhs)
+        {
+            cout << "NIM sudah ada" << endl;
+            return;
+        }
+    }
 }
 
 int main()
