@@ -15,6 +15,13 @@ Node* START = NULL;
 void addNode() {
     int nim; // Variabel untuk menyimpan NIM
     string nama;  // Variabel untuk menyimpan nama
+    Node* nodeBaru = new Node(); // Membuat node baru
+    cout << "Masukkan NIM: ";
+    cin >> nim;
+    cout << "Masukkan Nama: ";
+    cin >> nama;
+    nodeBaru->noMhs = nim; // Mengisi data NIM pada node baru
+    nodeBaru->name = nama; // Mengisi data nama pada node baru
 }
 
 int main()
