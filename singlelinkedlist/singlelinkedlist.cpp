@@ -11,6 +11,12 @@ struct Node {
 //  Inisialisasi pointer START ke NULL
 Node* START = NULL; 
 
+// Fungsi untuk menambahkan node baru ke linked list
+void addNode() {
+    int nim; // Variabel untuk menyimpan NIM
+    string nama;  // Variabel untuk menyimpan nama
+}
+
 int main()
 {
 }
