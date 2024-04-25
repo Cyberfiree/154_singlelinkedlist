@@ -52,9 +52,9 @@ void addNode() {
         previous = current;
         current = current->next;
     }
-
-
-
+    // Menyisipkan node baru di posisi yang tepat
+    nodeBaru->next = current;
+    previous->next = nodeBaru;
 }
 
 int main()
