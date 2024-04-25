@@ -39,6 +39,14 @@ void addNode() {
     // Jika NIM baru lebih besar dari NIM pada node pertama
     Node* previous = START;
     Node* current = START;
+
+    // Mencari posisi yang tepat untuk menyisipkan node baru
+    while ((current != NULL) && (nim >= current->noMhs))
+    {
+    }
+
+
+
 }
 
 int main()
