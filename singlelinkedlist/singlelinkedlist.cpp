@@ -36,6 +36,9 @@ void addNode() {
         START = nodeBaru;
         return;
     }
+    // Jika NIM baru lebih besar dari NIM pada node pertama
+    Node* previous = START;
+    Node* current = START;
 }
 
 int main()
