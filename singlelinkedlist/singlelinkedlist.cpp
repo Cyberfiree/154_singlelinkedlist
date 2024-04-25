@@ -31,6 +31,10 @@ void addNode() {
             cout << "NIM sudah ada" << endl;
             return;
         }
+        // Menambahkan node baru di awal linked list
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
     }
 }
 
