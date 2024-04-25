@@ -8,6 +8,9 @@ struct Node {
     Node* next; // pointer ke node berikutnya
 };
 
+//  Inisialisasi pointer START ke NULL
+Node* START = NULL; 
+
 int main()
 {
 }
