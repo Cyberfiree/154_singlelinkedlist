@@ -93,6 +93,14 @@ bool deleteNode(int nim) {
     return true;
 }
 
+// Fungsi untuk memeriksa apakah linked list kosong
+bool listEmpty() {
+    if (START == NULL)
+        return true;
+    else
+        return false;
+}
+
 int main()
 {
 }
