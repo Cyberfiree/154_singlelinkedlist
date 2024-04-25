@@ -3,25 +3,25 @@ using namespace std;
 
 // Mendefinisikan struktur Node untuk representasi data mahasiswa
 struct Node {
-    int noMhs; //Nomor Mahasiswa
-    string name; // Nama Mahasiswa
-    Node* next; // pointer ke node berikutnya
+    int noMhs;          // Nomor Mahasiswa (NIM)
+    string name;        // Nama Mahasiswa
+    Node* next;         // Pointer ke Node berikutnya
 };
 
-//  Inisialisasi pointer START ke NULL
-Node* START = NULL; 
+// Inisialisasi pointer START ke NULL
+Node* START = NULL;
 
 // Fungsi untuk menambahkan node baru ke linked list
 void addNode() {
-    int nim; // Variabel untuk menyimpan NIM
-    string nama;  // Variabel untuk menyimpan nama
-    Node* nodeBaru = new Node(); // Membuat node baru
+    int nim;            // Variabel untuk menyimpan NIM
+    string nama;        // Variabel untuk menyimpan nama
+    Node* nodeBaru = new Node();   // Membuat node baru
     cout << "Masukkan NIM: ";
     cin >> nim;
     cout << "Masukkan Nama: ";
     cin >> nama;
-    nodeBaru->noMhs = nim; // Mengisi data NIM pada node baru
-    nodeBaru->name = nama; // Mengisi data nama pada node baru
+    nodeBaru->noMhs = nim;      // Mengisi data NIM pada node baru
+    nodeBaru->name = nama;      // Mengisi data nama pada node baru
 
     // Jika linked list masih kosong atau NIM baru kurang dari atau sama dengan NIM pada node pertama
     if (START == NULL || nim <= START->noMhs) {
@@ -36,6 +36,7 @@ void addNode() {
         START = nodeBaru;
         return;
     }
+
     // Jika NIM baru lebih besar dari NIM pada node pertama
     Node* previous = START;
     Node* current = START;
@@ -52,6 +53,7 @@ void addNode() {
         previous = current;
         current = current->next;
     }
+
     // Menyisipkan node baru di posisi yang tepat
     nodeBaru->next = current;
     previous->next = nodeBaru;
@@ -143,8 +145,7 @@ void searchData() {
 }
 
 // Fungsi utama program
-int main()
-{
+int main() {
     int pilihan;
     do
     {
