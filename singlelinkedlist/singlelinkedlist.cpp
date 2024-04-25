@@ -43,6 +43,14 @@ void addNode() {
     // Mencari posisi yang tepat untuk menyisipkan node baru
     while ((current != NULL) && (nim >= current->noMhs))
     {
+        // Jika NIM baru sudah ada dalam linked list
+        if (nim == current->noMhs)
+        {
+            cout << "NIM sudah ada" << endl;
+            return;
+        }
+        previous = current;
+        current = current->next;
     }
 
 
